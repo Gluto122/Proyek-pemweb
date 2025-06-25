@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Perpustakaan Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="cekVIP(); muatSemuaBuku();">
+    <header>
+        <h1>📚 Perpustakaan Digital</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#" onclick="lihatPoin()">Profil</a>
+            <a href="#" onclick="upgradeVip()">VIP</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>📖 Buku Populer</h2>
+            <div class="book-slider">
+                <a href="buku.html?judul=Moby%20Dick"><div class="book-card">
+                    <img src="https://www.gutenberg.org/cache/epub/174/pg174.cover.medium.jpg">
+                    <h3>Moby Dick</h3>
+                    <p>Herman Melville</p>
+                </div></a>
+
+                <a href="buku.html?judul=Frankenstein"><div class="book-card">
+                    <img src="https://www.gutenberg.org/cache/epub/84/pg84.cover.medium.jpg">
+                    <h3>Frankenstein</h3>
+                    <p>Mary Shelley</p>
+                </div></a>
+
+                <a href="buku.html?judul=Alice"><div class="book-card">
+                    <img src="https://www.gutenberg.org/cache/epub/11/pg11.cover.medium.jpg">
+                    <h3>Alice in Wonderland</h3>
+                    <p>Lewis Carroll</p>
+                </div></a>
+            </div>
+        </section>
+
+        <section>
+            <h2>🔍 Cari Buku Lainnya</h2>
+            <input type="text" id="searchInput" placeholder="Ketik judul atau pengarang..." onkeyup="cariBuku()">
+            <div id="hasilPencarian" class="search-results"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

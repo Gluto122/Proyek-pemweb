@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Baca Buku</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="mulaiBaca()">
+    <header>
+        <h1 id="judulBuku">Baca Buku</h1>
+    </header>
+
+    <main>
+        <div class="book-reader">
+            <div id="halamanBuku">
+                <p id="isiBuku">Memuat...</p>
+            </div>
+            <div class="navigasi">
+                <button onclick="sebelumnya()">← Sebelumnya</button>
+                <button onclick="berikutnya()">Berikutnya →</button>
+            </div>
+        </div>
+    </main>
+
+    <div id="popup" class="popup">🎉 Dapat 10 poin!</div>
+    <script src="script.js"></script>
+</body>
+</html>

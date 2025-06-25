@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f0f0f0;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.book-slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px;
+}
+
+.book-card {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    min-width: 160px;
+    text-align: center;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+.book-card img {
+    width: 100%;
+    height: auto;
+}
+
+.book-reader {
+    background: white;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.navigasi button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #ffc107;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
